@@ -36,3 +36,20 @@ divs2.forEach((a,b) => {
 		}
 	})
 })
+document.querySelectorAll('.play-again').forEach(r =>{
+	r.addEventListener('click',function(){
+	let pulse = document.querySelectorAll('.pulse')
+	pulse.forEach(a =>{
+	a.classList.add('hide')
+	document.querySelectorAll('.results div').forEach(a => {
+		a.classList.add('hide')
+	})
+	document.querySelector('.choose').classList.remove('hide')
+		document.querySelector('.result').classList.add('hide')
+		document.querySelectorAll('.who-win div').forEach(a =>{
+			a.classList.add('hide')
+		})
+	divs[randomnum].classList.remove('hide')
+})
+})
+})
