@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css" />
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+</head>
+<body>
+  <div class="info-bar">
+	<ul>
+	  <li>Rock</li>
+	  <li>Paper</li>
+	  <li>Scissors</li>
+	</ul>
+	<div class="score">
+	  <h4>Score</h4>
+	  <span class="num">0</span>
+	</div>
+	<div class="clear-fix"></div>
+  </div>
+  <div class="select">
+  
+  </div>
+  <div class="rule-btn">Rules</div>
+  <div class="rule-bar"><div class="control"></div>
+    <div class="text">
+	<h3>Rules</h3>
+	<img class="close" src="images/icon-close.svg" alt="close">
+	<div class="clear-fix"></div>
+	</div>
+	<div class="illustration">
+	<img src="images/image-rules.svg">
+	</div>
+  </div>
+  <div class="choose ">
+	<div class="selections">
+	<span class="triangle"><img src="images/bg-triangle.svg"></span>
+	<div class="paper"><img class="paper "src="images/icon-paper.svg" alt="paper"></div>
+	<div class="scissors"><img class="scissors" src="images/icon-scissors.svg" alt="scissors"></div>
+	<div class="rock"><img class="rock" src="images/icon-rock.svg" alt="rock"></div>
+    </div>
+  </div>
+  <div class="result hide">
+	  <div class="you-choose">
+		<h3>You Picked</h3>
+		<div class="results">
+		<div class="paper hide"><img class="paper "src="images/icon-paper.svg" alt="paper"></div>
+		<div class="scissors hide"><img class="scissors" src="images/icon-scissors.svg" alt="scissors"></div>
+		<div class="rock hide"><img class="rock" src="images/icon-rock.svg" alt="rock"></div>
+		<ul class="pulse hide">
+		  <li class="st"></li>
+		  <li class="nd"></li>
+		  <li class="rd"></li>
+		</ul>
+		</div>
+	  </div>
+	  <div class="who-win">
+		<div class="lose hide">
+	      <h2>You Lose</h2>
+		  <button class="play-again">play Again</button>
+	    </div>
+		<div class="win hide">
+	      <h2>You Win</h2>
+		  <button class="play-again">play Again</button>
+	    </div>
+		<div class="draw hide">
+	      <h2>Draw</h2>
+		  <button class="play-again">play Again</button>
+	    </div>
+	  </div>
+	  <div class="house-choose">
+	    <h3>The House Picked</h3>
+		<div class="results">
+		<span class="circle "></span>
+		<div class="paper hide"><img class="paper "src="images/icon-paper.svg" alt="paper"></div>
+		<div class="scissors hide"><img class="scissors" src="images/icon-scissors.svg" alt="scissors"></div>
+		<div class="rock hide"><img class="rock" src="images/icon-rock.svg" alt="rock"></div>
+		<ul class="pulse hide">
+		  <li class="st"></li>
+		  <li class="nd"></li>
+		  <li class="rd"></li>
+		</ul>
+		</div>
+	  </div>
+  </div>
+  <script src="file.js"></script>
+</body>
+</html>
