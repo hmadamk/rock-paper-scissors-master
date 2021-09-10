@@ -18,21 +18,27 @@ document.querySelectorAll('.selections div').forEach(a => {
 })
 let divs = document.querySelectorAll('.house-choose .results div');
 randomnum = Math.floor(Math.random() * divs.length)
-divs[randomnum].classList.remove('hide')
 let divs2 = document.querySelectorAll('.selections div')
 divs2.forEach((a, b) => {
 	a.addEventListener('click', function () {
 		let array = document.querySelectorAll('.you-choose .results div');
 		array[b].classList.remove('hide');
+		setTimeout(function () { divs[randomnum].classList.remove('hide') }, 1500)
 		if (b - randomnum == 0) {
-			document.querySelector('.who-win .draw').classList.remove('hide')
+			setTimeout(function () {
+				document.querySelector('.who-win .draw').classList.remove('hide')
+			}, 1500)
 		} else if (b - randomnum == 1 || b - randomnum == -2) {
-			document.querySelector('.who-win .win').classList.remove('hide')
-			document.querySelector('.you-choose .pulse').classList.remove('hide')
-			document.querySelector('.num').innerText = parseInt(document.querySelector('.num').innerText) + 1
+			setTimeout(function () {
+				document.querySelector('.who-win .win').classList.remove('hide')
+				document.querySelector('.you-choose .pulse').classList.remove('hide')
+				document.querySelector('.num').innerText = parseInt(document.querySelector('.num').innerText) + 1
+			}, 1500)
 		} else {
-			document.querySelector('.who-win .lose').classList.remove('hide')
-			document.querySelector('.house-choose .pulse').classList.remove('hide')
+			setTimeout(function () {
+				document.querySelector('.who-win .lose').classList.remove('hide')
+				document.querySelector('.house-choose .pulse').classList.remove('hide')
+			}, 1500)
 		}
 	})
 })
@@ -50,7 +56,6 @@ document.querySelectorAll('.play-again').forEach(r => {
 				a.classList.add('hide')
 			})
 			randomnum = Math.floor(Math.random() * divs.length)
-			divs[randomnum].classList.remove('hide')
 		})
 	})
 })
