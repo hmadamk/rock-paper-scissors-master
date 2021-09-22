@@ -8,6 +8,8 @@ body{
 	min-height:100vh;
 	font-family: 'Barlow Semi Condensed', sans-serif;
 	text-transform:uppercase;
+}
+body,html{
 	overflow:hidden;
 }
 .info-bar{
@@ -179,6 +181,11 @@ body{
 	letter-spacing:5px;
 	display:flex;
 	text-align:center;
+}
+.result h3{
+	font-size:clamp(.6rem,3vw,2rem);
+	min-width:23ch;
+	margin-inline:auto;
 }
 .you-choose,
 .house-choose{
@@ -393,19 +400,22 @@ body{
 		animation:pulse 1.8s infinite linear;
 	}
 	.you-choose ul{
-		padding:25px 0 0;
+		padding:4px 0 0;
+	}
+	.you-choose .results div{
+		top:0;
 	}
 	.who-win{
 		z-index:90;
 		position:absolute;
-		top:360px;
+		top:310px;
 		left:50%;
 		transform:translate(-50%)
 		
 	}
 	.who-win h2{
 		font-size:2.5rem;
-		width:7ch;
+		width:8ch;
 		margin-top:0;
 		letter-spacing:0;
 		margin-bottom:10px
